@@ -1,0 +1,69 @@
+/* LaunchList.css */
+
+.launch-list-container {
+  margin: 20px;
+}
+
+.launch-list-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.launch-list-table-container {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Remove table row borders (lines between rows) */
+.launch-list-table .MuiTableBody-root .MuiTableRow-root td {
+  border-bottom: none;
+}
+
+/* Optional: Hover effect on clickable rows */
+.table-row-clickable:hover {
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+/* Bold headers */
+.table-cell-bold {
+  font-weight: bold;
+  font-size: 0.95rem;
+  background-color: #f4f5f5;
+}
+
+/* Status badge styles */
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 16px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: inline-block;
+  /* Removed text-transform to avoid ALL CAPS */
+  text-transform: none;
+}
+
+.status-success {
+  background-color: #e6f4ea;
+  color: #2e7d32;
+}
+
+.status-failed {
+  background-color: #fdecea;
+  color: #d32f2f;
+}
+
+.status-upcoming {
+  background-color: #fff8e1;
+  color: #f9a825;
+}
+
+
+.pagination-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}

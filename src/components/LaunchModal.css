@@ -1,0 +1,87 @@
+/* src/components/LaunchModal.css */
+.modalBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  background-color: white;
+  box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2), 0px 24px 38px 3px rgba(0,0,0,0.14), 0px 9px 46px 8px rgba(0,0,0,0.12);
+  border-radius: 8px;
+  overflow: auto;
+  max-height: 90vh;
+  padding: 0;
+  outline: none;
+}
+
+.patchImage {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-right: 16px;
+}
+
+.missionInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.statusChip {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.statusChipUpcoming {
+  background-color: #FFF3CD;
+  color: #856404;
+}
+
+.statusChipSuccess {
+  background-color: #D1FAE5;
+  color: #065F46;
+}
+
+.statusChipFailed {
+  background-color: #FEE2E2;
+  color: #991B1B;
+}
+
+.rocketName {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.iconLinks {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+  color: gray;
+}
+
+.iconLink {
+  color: inherit;
+}
+
+.metadataGrid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  row-gap: 8px;
+  column-gap: 16px;
+  margin-top: 16px;
+}
+
+.closeButton {
+  align-self: flex-start;
+}
+
+.launchDetails {
+  margin: 16px 0;
+}
+
+.wikiLink {
+  color: #1976d2;
+  text-decoration: underline;
+}

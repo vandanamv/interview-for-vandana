@@ -5,7 +5,7 @@ const Loading = () => {
   return (
     <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center" height="400px">
       <CircularProgress />
-      <Typography variant="body1" color="textSecondary" mt={2}>
+      <Typography variant="body1" color="text.secondary" mt={2}>
         Loading launches...
       </Typography>
     </Box>

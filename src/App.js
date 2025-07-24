@@ -81,18 +81,10 @@ function App() {
       <Box textAlign="center" my={2}>
         <img src={spaceXImage} alt="SpaceX" style={{ maxWidth: '100%', height: 'auto' }} />
       </Box>
-
       <Box sx={{ boxShadow: 3, width: '100%', my: 2 }}>
         <Divider />
       </Box>
-
-      <Box
-        sx={{
-          width: '100%',
-          maxWidth: 1200,
-          mx: 'auto',
-        }}
-      >
+      <Box sx={{ width: '100%', maxWidth: 1200, mx: 'auto' }}>
         <LaunchList
           launches={filteredLaunches.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)}
           launchpadMap={launchpadMap}
@@ -104,18 +96,16 @@ function App() {
           totalLaunches={filteredLaunches.length}
           onChangePage={handleChangePage}
           onChangeRowsPerPage={handleChangeRowsPerPage}
-          onFilterChange={handleFilterChange}     // 👈 New
-          setFilter={setFilter}                   // 👈 New
+          onFilterChange={handleFilterChange}
+          setFilter={setFilter}
         />
       </Box>
-
       <LaunchModal
         open={isModalOpen}
         handleClose={handleCloseModal}
         launch={selectedLaunch}
         launchpadMap={launchpadMap}
         rocketMap={rocketMap}
-        
       />
     </div>
   );

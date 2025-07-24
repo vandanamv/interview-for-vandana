@@ -1,5 +1,3 @@
-
-//src/services/api.js
 import axios from 'axios';
 
 const API_URL_LAUNCHES = 'https://api.spacexdata.com/v4/launches';

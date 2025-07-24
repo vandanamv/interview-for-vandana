@@ -9,7 +9,7 @@ const CustomPagination = ({ count, page, rowsPerPage, onPageChange }) => {
       <Pagination
         count={totalPages}
         page={page + 1} 
-        onChange={(event, newPage) => onPageChange(event, newPage - 1)} // Adjust back to 0-based index
+        onChange={(event, newPage) => onPageChange(event, newPage - 1)} 
         shape="rounded"
         color="grey"
         siblingCount={0} 
